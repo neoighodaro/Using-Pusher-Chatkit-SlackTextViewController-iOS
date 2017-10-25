@@ -8,7 +8,6 @@
 
 import UIKit
 import PusherChatkit
-import PusherPlatform
 
 class RoomListTableViewController: UITableViewController {
     var username: String!
@@ -50,30 +49,23 @@ extension RoomListTableViewController: PCChatManagerDelegate {
     }
     
     private func initPusherChatManager(completion: @escaping (_ success: PCCurrentUser) -> Void) -> Void {
-        let tokenProvider = PPHTTPEndpointTokenProvider(
-            url: AppConstants.ENDPOINT + "/auth",
-            requestInjector: { req -> PPHTTPEndpointTokenProviderRequest in
-                req.body?.append(PPHTTPBodyPair(key: "user_id", value: self.username))
-                return req
-        }
+        let chatManager = ChatManager(
+            instanceId: AppConstants.INSTANCE_ID,
+            tokenProvider: PCTokenProvider(url: AppConstants.ENDPOINT + "/auth", userId: username)
         )
-        
-        let chatManager = ChatManager(instanceId: AppConstants.INSTANCE_ID, tokenProvider: tokenProvider)
         
         chatManager.connect(delegate: self) { (user, error) in
             guard error == nil else { return }
             guard let user = user else { return }
             
-            // Get a list of the joinable rooms for the user. In practice this means a list of the
-            // public rooms that the user hasn't yet joined. For each of those joinable rooms we
-            // then try to make the current user join.
-            user.getJoinableRooms() { rooms, error in
+            // Get a list of all rooms. Attempt to join the room.
+            user.getAllRooms { rooms, error in
                 guard error == nil else { return }
                 
                 self.availableRooms = rooms!
                 
-                rooms!.forEach { joinableRoom in
-                    user.joinRoom(joinableRoom) { room, error in
+                rooms!.forEach { room in
+                    user.joinRoom(room) { room, error in
                         guard error == nil else { return }
                     }
                 }

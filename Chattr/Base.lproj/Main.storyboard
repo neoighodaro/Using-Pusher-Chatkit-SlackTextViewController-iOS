@@ -77,18 +77,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="username"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zH-BW-xcT">
-                                <rect key="frame" x="16" y="361" width="343" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zH-BW-xcT">
+                                <rect key="frame" x="16" y="361" width="343" height="46"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="gzU-zo-Q4D"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Enter Chatroom"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="7zH-BW-xcT" firstAttribute="leading" secondItem="eJH-AA-0X4" secondAttribute="leading" constant="16" id="HgL-MC-dij"/>
+                            <constraint firstItem="7zH-BW-xcT" firstAttribute="top" secondItem="34c-OF-ljV" secondAttribute="bottom" constant="8" id="Iro-Wm-tok"/>
                             <constraint firstItem="34c-OF-ljV" firstAttribute="leading" secondItem="eJH-AA-0X4" secondAttribute="leading" constant="16" id="awO-MW-7rF"/>
                             <constraint firstItem="34c-OF-ljV" firstAttribute="centerY" secondItem="QKV-bk-OCW" secondAttribute="centerY" id="jh5-0d-Ows"/>
+                            <constraint firstItem="eJH-AA-0X4" firstAttribute="trailing" secondItem="7zH-BW-xcT" secondAttribute="trailing" constant="16" id="vA4-dX-bEI"/>
                             <constraint firstItem="34c-OF-ljV" firstAttribute="centerX" secondItem="QKV-bk-OCW" secondAttribute="centerX" id="xM7-gU-Df3"/>
                             <constraint firstItem="eJH-AA-0X4" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="34c-OF-ljV" secondAttribute="trailing" id="zz4-Ph-AO2"/>
                         </constraints>

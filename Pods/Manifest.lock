@@ -1,8 +1,8 @@
 PODS:
   - Alamofire (4.5.1)
-  - PusherChatkit (0.3.1):
-    - PusherPlatform (~> 0.1.31)
-  - PusherPlatform (0.1.31)
+  - PusherChatkit (0.3.2):
+    - PusherPlatform (~> 0.1.32)
+  - PusherPlatform (0.1.32)
   - SlackTextViewController (1.9.5)
 
 DEPENDENCIES:
@@ -22,8 +22,8 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
-  PusherChatkit: f50cf3a9d69130f40dc36f7edf8f354f35e4c796
-  PusherPlatform: b8aad886c83e96d95ef832a20307f52b3a7f7bdb
+  PusherChatkit: 6e8887466b78842411dafb7849e9a4c29a9c8315
+  PusherPlatform: c774bf11206a7e81914c0978c8317b711f0b52ba
   SlackTextViewController: fbcdadbb8090673f604484ff5b6eb8d77baed42a
 
 PODFILE CHECKSUM: 49a5bff478aafd5158d07526a1b1abf91700efb2

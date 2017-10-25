@@ -4,6 +4,7 @@
 [![Read the docs](https://img.shields.io/badge/read_the-docs-92A8D1.svg)](https://docs.pusher.com/chatkit/reference/swift)
 [![Twitter](https://img.shields.io/badge/twitter-@Pusher-blue.svg?style=flat)](http://twitter.com/Pusher)
 [![Carthage](https://img.shields.io/badge/carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![CocoaPods](https://img.shields.io/cocoapods/v/PusherChatkit.svg)](https://cocoapods.org/pods/PusherChatkit)
 [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/pusher/chatkit-swift/blob/master/LICENSE.md)
 
 ## Building and Running
@@ -34,7 +35,7 @@ use_frameworks!
 
 # Replace `<Your Target Name>` with your app's target name.
 target '<Your Target Name>' do
-    pod 'PusherChatkit', '~> 0.2.9'
+  pod 'PusherChatkit', '~> 0.3.2'
 end
 ```
 
@@ -63,7 +64,7 @@ To integrate Chatkit into your Xcode project using Carthage, specify it in your 
 github "pusher/chatkit-swift"
 ```
 
-Run `carthage update` to build the framework and drag the built `PusherChat.framework` and `PusherPlatform.framework` into your Xcode project.
+Run `carthage update` to build the framework and drag the built `PusherChatkit.framework` and `PusherPlatform.framework` into your Xcode project.
 
 ## Getting started
 

@@ -1,6 +1,6 @@
 # PusherPlatform (pusher-platform-swift)
 
-[![Build Status](https://travis-ci.org/pusher/pusher-platform-swift.svg?branch=master)](https://travis-ci.org/pusher/pusher-platform-swift)
+[![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=59c51e712ffc62000182d7c9&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/59c51e712ffc62000182d7c9/build/latest?branch=master)
 [![Twitter](https://img.shields.io/badge/twitter-@Pusher-blue.svg?style=flat)](http://twitter.com/Pusher)
 [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/pusher/pusher-platform-swift/master/LICENSE.md)
 
@@ -98,14 +98,14 @@ The `Instance` instance allows you to interact with the service using the Elemen
 
 There are a set of tests for the library that can be run using the standard method (Command-U in Xcode).
 
-The tests also get run on [Travis-CI](https://travis-ci.org/pusher/pusher-platform-swift). See [.travis.yml](https://github.com/pusher/pusher-platform-swift/blob/master/.travis.yml) for details on how the Travis tests are run.
+The tests also get run on [buddybuild](https://dashboard.buddybuild.com/apps/59c51e712ffc62000182d7c9/build/latest?branch=master). See [buddybuild_postbuild.sh](https://github.com/pusher/pusher-platform-swift/blob/master/buddybuild_postbuild.sh) for details on how the tests are run.
 
 
 ## Communication
 
-- Found a bug? Please open an issue.
-- Have a feature request. Please open an issue.
-- If you want to contribute, please submit a pull request (preferrably with some tests 🙂 ).
+- Found a bug? Please open an [issue](https://github.com/pusher/pusher-platform-swift/issues).
+- Have a feature request. Please open an [issue](https://github.com/pusher/pusher-platform-swift/issues).
+- If you want to contribute, please submit a [pull request](https://github.com/pusher/pusher-platform-swift/pulls) (preferrably with some tests 🙂 ).
 
 
 ## License

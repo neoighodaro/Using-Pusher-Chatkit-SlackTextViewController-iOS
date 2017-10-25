@@ -8,7 +8,6 @@
 
 import UIKit
 import PusherChatkit
-import PusherPlatform
 import SlackTextViewController
 
 

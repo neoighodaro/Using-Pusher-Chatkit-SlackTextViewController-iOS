@@ -24,7 +24,7 @@ app.post('/users', (req, res) => {
 // Fetches a token from Chatkit and returns it
 // --------------------------------------------------------
 app.post('/auth', (req, res) => {
-    let resp = chatkit.authenticate({grant_type: req.body.grant_type}, req.body.user_id)
+    let resp = chatkit.authenticate({grant_type: req.body.grant_type}, req.query.user_id)
     res.json(resp)
 });
 
