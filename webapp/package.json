@@ -1,0 +1,8 @@
+{
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "pusher-chatkit-server": "^0.4.1"
+  }
+}
