@@ -11,7 +11,7 @@ import UIKit
 
 struct AppConstants {
     static let ENDPOINT    = "http://localhost:4000"
-    static let INSTANCE_ID = "v1:us1:1e993c48-d331-47f3-bbbe-4b6129e7c81d"
+    static let INSTANCE_LOCATOR = "PUSHER_CHATKIT_INSTANCE_LOCATOR"
 }
 
 @UIApplicationMain
