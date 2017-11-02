@@ -50,7 +50,7 @@ extension RoomListTableViewController: PCChatManagerDelegate {
     
     private func initPusherChatManager(completion: @escaping (_ success: PCCurrentUser) -> Void) -> Void {
         let chatManager = ChatManager(
-            instanceId: AppConstants.PUSHER_CHATKIT_INSTANCE_LOCATOR,
+            instanceLocator: AppConstants.INSTANCE_LOCATOR,
             tokenProvider: PCTokenProvider(url: AppConstants.ENDPOINT + "/auth", userId: username)
         )
         

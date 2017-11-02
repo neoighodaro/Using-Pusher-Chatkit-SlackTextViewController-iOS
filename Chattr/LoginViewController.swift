@@ -38,7 +38,7 @@ extension LoginViewController {
     
     // MARK: Helpers
     @objc func typingUsername(_ sender: UITextField) {
-        self.loginButton.isEnabled = sender.text!.characters.count >= 3
+        self.loginButton.isEnabled = sender.text!.count >= 3
     }
     
     @objc func loginButtonPressed(_ sender: Any) {
